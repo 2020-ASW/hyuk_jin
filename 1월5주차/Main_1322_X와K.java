@@ -17,16 +17,16 @@ public class Main_1322_X와K {
 		int cnt = 0;
 		while(N > 0) {
 			if(N % 2 == 0) {
-				arr[cnt] = 0;
+				arr[cnt++] = 0;
 			}
 			else {
-				arr[cnt] = 1;
+				arr[cnt++] = 1;
 			}
 			
 			N = N / 2;
 		}
 		long answer = 0;
-		int Y = 1;
+		long Y = 1;
 		for(int i = 0; i < 65 && K > 0; i++, Y *= 2) {
 			if(arr[i] == 0) {
 				if(K % 2 == 1) {
